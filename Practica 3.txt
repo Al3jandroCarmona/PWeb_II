@@ -1,0 +1,30 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio JavaScript</title>
+</head>
+<body>
+    <button onclick="calcular()">Mostrar resultado</button>
+
+    <script>
+        // Declaramos la variable 'numero' usando let y le asignamos el valor 5
+        let numero = 5; 
+
+        // Sumamos 10 a 'numero' y reasignamos el nuevo valor
+        numero += 10; 
+
+        // Imprimimos el resultado en la consola
+        console.log("El resultado es: " + numero);
+
+        // Función que se ejecuta al hacer clic en el botón
+        function calcular() {
+            console.log("El resultado es: " + numero);
+            alert("El resultado es: " + numero); // También mostramos el resultado en una alerta
+        }
+    </script>
+</body>
+</html>

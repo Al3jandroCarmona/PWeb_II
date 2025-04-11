@@ -1,0 +1,62 @@
+HTML
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 11</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<b>Ejercicio </b>
+
+<pre>
+ Crea un programa en JavaScript que haga lo siguiente:
+
+ 1-Tenga un arreglo con al menos 5 nombres de
+ estudiantes.
+ 2-Muestra todos los nombres en una sola línea separados
+ por comas (ya sea en la consola o en un párrafo).
+ 3-Pregunta al usuario por el nombre de un estudiante y
+ revisa si está en la lista:
+    -Si el nombre está, muestra un mensaje que diga       
+    "El estudiante está en la lista".
+    Si no está, muestra "El estudiante no está en la lista".
+ 4-Ordena alfabéticamente los nombres en el arreglo.
+ 5-Muestra (ya sea en la consola o en un párrafo) la lista de
+ nombres ordenada.
+ 
+ 
+
+    (revisar la consola)
+</pre>
+
+</body>
+</html>
+
+
+Js
+
+// Definir un arreglo con al menos 5 nombres de estudiantes
+let estudiantes = ["Ana", "Luis", "Carlos", "Maria", "Sofia"];
+
+// Mostrar todos los nombres en una sola línea separados por comas
+console.log("Lista de estudiantes:", estudiantes.join(", "));
+
+// Preguntar al usuario por un nombre
+let nombreBuscado = prompt("Ingresa el nombre de un estudiante:");
+
+// Verificar si el nombre está en la lista
+if (estudiantes.includes(nombreBuscado)) {
+    console.log("El estudiante está en la lista.");
+} else {
+    console.log("El estudiante no está en la lista.");
+}
+
+// Ordenar alfabéticamente los nombres en el arreglo
+estudiantes.sort();
+
+// Mostrar la lista ordenada
+console.log("Lista ordenada:", estudiantes.join(", "));

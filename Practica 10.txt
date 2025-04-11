@@ -1,0 +1,163 @@
+HTML
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 10-JavaScript Number Properties</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<b>Ejercicio 1</b>
+
+<pre>
+ Crea un programa que reciba un número del usuario y determine si:
+ 1-Es mayor que Number.MAX_SAFE_INTEGER o menor que Number.MIN_SAFE_INTEGER.
+ 2-Es más pequeño que Number.MIN_VALUE.
+ 3-Es un número válido o NaN (no numérico).
+ Ejemplo de entrada/salida:
+ Entrada  ---->  Salida
+ 10000000000000000  ---->  El número es mayor que MAX_SAFE_INTEGER.-9007199254740992  ---->  El número es menor que MIN_SAFE_INTEGER.
+ 0.0000000000000000000000000001  ---->  El número es menor que MIN_VALUE.
+ "hola"  ---->  El valor ingresado no es un número (NaN)
+
+    (revisar la consola)
+</pre>
+
+</body>
+</html>
+
+
+Js
+
+// Pedimos un número al usuario
+let entrada = prompt("Ingresa un número:");
+
+// Convertimos la entrada a un número
+let numero = Number(entrada);
+
+// Verificamos si el valor ingresado es un número válido o NaN
+if (isNaN(numero)) {
+    console.log("El valor ingresado no es un número (NaN)");
+} else {
+    // Verificamos si es mayor que MAX_SAFE_INTEGER
+    if (numero > Number.MAX_SAFE_INTEGER) {
+        console.log("El número es mayor que MAX_SAFE_INTEGER.");
+    }
+
+    // Verificamos si es menor que MIN_SAFE_INTEGER
+    if (numero < Number.MIN_SAFE_INTEGER) {
+        console.log("El número es menor que MIN_SAFE_INTEGER.");
+    }
+
+    // Verificamos si es menor que MIN_VALUE
+    if (numero > 0 && numero < Number.MIN_VALUE) {
+        console.log("El número es menor que MIN_VALUE.");
+    }
+}
+
+
+HTML
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 10-JavaScript Arrays</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<b>Ejercicio 2</b>
+
+<pre>
+Crea un programa en JavaScript que:
+
+1-Defina un array con 5 números enteros. 
+2-Muestre el primer y el último número del array. 
+3-Calcule la suma de todos los números. 
+4-Agregue un nuevo número al final del array y lo muestre actualizado.
+Ejemplo de salida en la consola:
+
+Array original: [10, 25, 30, 45, 50] Primer número: 10 Último número: 50 Suma total: 160 Array actualizado: 10, 25, 30, 45, 50, 60
+
+    (revisar la consola)
+</pre>
+
+</body>
+</html>
+
+
+Js
+
+
+// Definir un array con 5 números enteros
+let numeros = [10, 25, 30, 45, 50];
+
+// Mostrar el primer y el último número del array
+console.log("Array original:", numeros);
+console.log("Primer número:", numeros[0]);
+console.log("Último número:", numeros[numeros.length - 1]);
+
+// Calcular la suma de todos los números
+let sumaTotal = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+console.log("Suma total:", sumaTotal);
+
+// Agregar un nuevo número al final del array
+numeros.push(60);
+console.log("Array actualizado:", numeros);
+
+
+HTML
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 10-JavaScript Number Methods</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<b>Ejercicio 3</b>
+
+<pre>
+ Declara un número.
+ Muestra en la consola:
+
+ a.Si es entero o no (Number.isInteger()).
+ b.El valor redondeado a 2 decimales (toFixed(2)).
+ c. Notación científica con 3 dígitos (toExponential(3)).
+
+ Ejemplo de la salida en consola:
+ 
+ --- Análisis del Número --
+Número original: 1234.5678
+ ¿Es entero? No
+ Redondeado a 2 decimales: 1234.57
+ Notación científica (3 dígitos): 1.235e+3
+
+    (revisar la consola)
+</pre>
+
+</body>
+</html>
+
+
+Js
+
+
+// Declaramos un número
+let numero = 1234.5678;
+
+// Mostramos los resultados en la consola
+console.log("--- Análisis del Número ---");
+console.log("Número original:", numero);
+console.log("¿Es entero?", Number.isInteger(numero) ? "Sí" : "No");
+console.log("Redondeado a 2 decimales:", numero.toFixed(2));
+console.log("Notación científica (3 dígitos):", numero.toExponential(3));
+

@@ -1,0 +1,96 @@
+Ejercicio 1
+HTML
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practica 2</title>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+
+<b>
+	EJERCICIO 1
+</b>
+<pre>
+	
+ Crea un programa que realice lo siguiente:
+ • Pregunta al usuario su nombre mediante un cuadro de texto.
+ • Muestra un mensaje personalizado en una alerta que diga:
+ "Hola, "nombre", bienvenido a la práctica de JavaScript!"
+ • Además, imprime el mensaje en el documento web y en la consola del navegador
+
+</pre>
+<body>
+
+</body>
+</html>
+
+Js
+
+// Preguntar al usuario su nombre
+let nombre = prompt("Por favor, ingresa tu nombre:");
+
+// Crear el mensaje personalizado
+let mensaje = `Hola, ${nombre}, bienvenido a la práctica de JavaScript!`;
+
+// Mostrar el mensaje en una alerta
+alert(mensaje);
+
+// Imprimir el mensaje en el documento web
+document.write(mensaje);
+
+// Imprimir el mensaje en la consola
+console.log(mensaje);
+
+
+
+
+Ejercicio 2
+
+HTML
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practica2</title>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+
+<b>
+	EJERCICIO 2
+</b>
+
+<pre>
+	
+ En el siguiente código hay varios errores de sintaxis. Tu tarea es corregirlos para que funcione 
+correctamente. Una vez corregido, el programa debería mostrar un mensaje con el resultado de una 
+operación matemática en la consola.
+ let numero1 = 10
+ let numero2 = 5
+ if numero1 + numero2 = 15 {
+ console.log("El resultado es: " numero1 + numero2)
+}
+
+</pre>
+<body>
+
+</body>
+</html>
+
+
+
+
+Js
+
+// Declaración de variables con la sintaxis correcta
+let numero1 = 10;
+let numero2 = 5;
+
+// Usar comparación correcta en la condición
+if (numero1 + numero2 === 15) {
+    console.log("El resultado es: " + (numero1 + numero2));
+}

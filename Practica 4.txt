@@ -1,0 +1,133 @@
+HTML
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practica 4</title>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+	<b>
+		EJERCICIO 1
+	</b>
+
+	<pre>
+
+		
+		 Declara una constante llamada ciudad y asígnale el nombre de tu ciudad. Luego, muestra un mensaje en consola que diga:
+		 "Vivo en [nombre de la ciudad]"
+ 
+
+
+	</pre>
+
+</body>
+</html>
+
+
+
+Js
+
+
+// Declaramos la constante 'ciudad' con el nombre de nuestra ciudad
+const ciudad = "Loma Bonita"; 
+
+// Mostramos un mensaje en la consola con el nombre de la ciudad
+console.log("Vivo en " + ciudad);
+
+
+
+
+
+
+
+
+
+HTML
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practica 4</title>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+	<b>
+		EJERCICIO 2
+	</b>
+
+	<pre>
+		Crea dos constantes llamadas edad1 y edad2. Compara cuál es mayor usando el operador > y muestra en consola un mensaje que indique cuál es la mayor edad o si son iguales.
+
+	</pre>
+
+</body>
+</html>
+
+
+Js
+
+
+// Declaramos las constantes 'edad1' y 'edad2'
+const edad1 = 25;
+const edad2 = 30;
+
+// Comparamos cuál es mayor
+if (edad1 > edad2) {
+    console.log("La edad mayor es: " + edad1);
+} else if (edad2 > edad1) {
+    console.log("La edad mayor es: " + edad2);
+} else {
+    console.log("Ambas edades son iguales.");
+}
+
+
+
+
+
+
+
+
+
+HTML
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practica 4</title>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+	<b>
+		EJERCICIO 3
+	</b>
+
+	<pre>
+		Declara dos constantes precioProducto y cantidad. Calcula el total a pagar multiplicando estos valores y muestra el resultado en consola: "Total a pagar: [resultado]"
+
+	</pre>
+
+</body>
+</html>
+
+
+Js
+
+// Declaramos las constantes 'precioProducto' y 'cantidad'
+const precioProducto = 50; 
+const cantidad = 3; 
+
+// Calculamos el total
+const totalPagar = precioProducto * cantidad;
+
+// Mostramos el resultado en la consola
+console.log("Total a pagar: " + totalPagar);

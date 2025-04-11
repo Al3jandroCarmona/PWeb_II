@@ -1,0 +1,117 @@
+HTML
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 9</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<b>Ejercicio 1</b>
+
+<pre>
+Crea una función llamada saludoPersonalizado que tome dos parámetros:
+nombre y edad. La función debe devolver un string que diga:
+"Hola [nombre], tienes [edad] años."
+ Usa template strings para formatear el mensaje
+
+    (revisar la consola)
+</pre>
+
+</body>
+</html>
+
+
+Js
+
+
+function saludoPersonalizado(nombre, edad) {
+    return `Hola ${nombre}, tienes ${edad} años.`;
+}
+
+// Pruebas en consola
+console.log(saludoPersonalizado("Alejandro", 25));
+console.log(saludoPersonalizado("Valeria", 30));
+
+
+HTML
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 9</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<b>Ejercicio 2</b>
+
+<pre>
+Escribe una función llamada esPar que tome un número como argumento y
+devuelva true si es par y false si es impar. Usa operaciones matemáticas
+básicas con números
+
+    (revisar la consola)
+</pre>
+
+</body>
+</html>
+
+
+Js
+
+
+function esPar(numero) {
+    return numero % 2 === 0;
+}
+
+// Pruebas en consola
+console.log(esPar(10));  // true
+console.log(esPar(7));   // false
+console.log(esPar(20));  // true
+
+
+HTML
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 9</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<b>Ejercicio 3</b>
+
+<pre>
+Crea dos variables usando BigInt:
+-numeroGrande con el valor 9007199254740991n (el número más grande
+-que no puede manejarse con Number en JavaScript).
+-otroNumeroGrande con el valor 10000000000000000n.
+
+    (revisar la consola)
+</pre>
+
+</body>
+</html>
+
+
+Js
+
+
+const numeroGrande = 9007199254740991n;
+const otroNumeroGrande = 10000000000000000n;
+
+// Operaciones con BigInt
+const suma = numeroGrande + otroNumeroGrande;
+const multiplicacion = numeroGrande * otroNumeroGrande;
+
+console.log("Suma:", suma);
+console.log("Multiplicación:", multiplicacion);

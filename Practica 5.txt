@@ -1,0 +1,49 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 5</title>
+</head>
+<body>
+    <b>Ejercicio</b>
+    <pre>
+        
+         Crea una variable nombre (String) y edad (Number).
+         Crea una función saludar(nombre) que retorne un saludo.
+         Crea una función esMayorDeEdad(edad) que devuelva true si la
+         edad es mayor a 18, false si no.
+         Muestra los resultados en la consola.
+
+    </pre>
+    <h1>Bienvenido</h1>
+    <!-- Llamada al archivo JS -->
+    <script type="text/javascript" src="script.js"></script>
+    <button onclick="saludo()">Saludo</button>
+    <button onclick="esMayorDeEdad()">Mayor de edad</button>
+    
+</body>
+</html>
+
+
+
+JS
+
+let nombre = prompt("Por favor ingresa tu nombre");
+let edad = prompt("Por favor ingresa tu edad");
+var mayor;
+
+function saludo(){
+	return console.log("Hola" + nombre);
+}
+
+function esMayorDeEdad(){
+	//let mayor;
+	if(edad > 18){
+		mayor = true;
+	} else {
+		mayor = false;
+	}
+	console.log(mayor);
+}

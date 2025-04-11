@@ -1,0 +1,48 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 6-El Erizo</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<b>Ejercicio</b>
+
+<pre>
+    Crea un objeto que se 
+    llame como tu animal 
+    favorito, dale 4
+    propiedades y 1 método.
+    Usa console.log( ) para 
+    mostrar una propiedad y 
+    ejecutar el método
+
+    (revisar la consola)
+</pre>
+
+</body>
+</html>
+
+
+Js
+
+
+
+const Erizo = {
+    nombre: "Punky",
+    color: "Marrón",
+    tamaño: "Pequeño",
+    númeroDeEspinas: 5000,
+    
+    // Método del objeto
+    defenderse: function() {
+        return "El erizo se hace bola y muestra sus espinas para defenderse.";
+    }
+};
+
+// Mostramos una propiedad y ejecutamos el método
+console.log("El color del erizo es:", Erizo.color); 
+console.log(Erizo.defenderse()); 

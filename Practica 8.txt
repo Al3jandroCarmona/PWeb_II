@@ -1,0 +1,51 @@
+HTML
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 8</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<b>Ejercicio</b>
+
+<pre>
+Crea una función que reciba un nombre como parámetro y
+ haga lo siguiente:
+ Convierta el nombre a mayúsculas. 1.
+ Verifique si el nombre contiene la letra "E" . 2.
+ Obtenga la primera letra del nombre. 3.
+ Devuelva un mensaje del tipo: 4.
+"HOLA, [NOMBRE]. TU NOMBRE CONTIENE LA LETRA
+ E: [true/false]. EMPIEZA CON: [letra]"
+
+    (revisar la consola)
+</pre>
+
+</body>
+</html>
+
+
+Js
+
+
+function procesarNombre(nombre) {
+    // Convertir el nombre a mayúsculas
+    let nombreMayusculas = nombre.toUpperCase();
+
+    // Verificar si el nombre contiene la letra "E"
+    let contieneE = nombreMayusculas.includes("E");
+
+    // Obtener la primera letra del nombre
+    let primeraLetra = nombreMayusculas.charAt(0);
+
+    // Devolver el mensaje formateado
+    return `HOLA, ${nombreMayusculas}. TU NOMBRE CONTIENE LA LETRA E: ${contieneE}. EMPIEZA CON: ${primeraLetra}`;
+}
+
+// Prueba en consola
+console.log(procesarNombre("Alejandro")); 
+console.log(procesarNombre("Juan"));
